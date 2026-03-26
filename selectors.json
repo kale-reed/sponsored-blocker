@@ -1,48 +1,58 @@
 {
-  "_comment": "Sponsored Blocker — Amazon selector config. Host this file on GitHub and update it whenever Amazon changes their HTML. The extension fetches this automatically every 24 hours. Groups: sp-data-attrs, class-based, carousels, label-text, top-page-ads, sidebar-widgets, blank-asin-slots, video-ads, editorial, aria-labels.",
-  "_version": "1.0.0",
-  "_last_updated": "2026-03-25",
-
-  "selectors": [
-    "[data-component-type='sp-sponsored-result']",
-    "[data-component-type='s-impression-logger'][data-component-id*='sp-']",
-    "[data-component-type='s-sponsored-header']",
-    "[data-component-type='s-video-sponsored-result']",
-
-    ".AdHolder",
-    ".s-sponsored-label-info-icon",
-    ".puis-sponsored-label-text",
-    ".s-label-popover-default",
-    ".s-desktop-sponsor-col",
-    ".sp_sponsored_label",
-    ".s-coupon-highlight-color[data-csa-c-slot-id*='sp']",
-
-    "[data-cel-widget*='SPONSOR']",
-    "[data-cel-widget*='sp-']",
-    "[data-cel-widget='SPONSORED_PRODUCTS-EDITORIAL_REC']",
-
-    "[data-csa-c-content-id*='sponsored']",
-    "[data-csa-c-slot-id*='sponsored']",
-    "[data-asin=''][data-index]",
-    "[data-is-sponsored]",
-
-    "#sp_detail",
-    "#sp_detail2",
-    "#sp_detail_thematic",
-    "#desktop_buybox_group_sponsored_products",
-    "#sponAsinCarousel",
-    "#sponsoredProducts2_feature_div",
-    "#sponsoredProducts3_feature_div",
-    "#sp-detail-below-reviews",
-    "#rhf",
-    "#top-picks-aw-sponsored",
-    "#sponsored-products-sota_feature_div",
-    "#sims-fbt-sponsored_feature_div",
-    "#sponsored-brand-carousel_feature_div",
-    "#sponsored-brands-below-search",
-    "#sb-brand-story-ad_feature_div",
-
-    "[aria-label='Sponsored']",
-    "[aria-label*='Sponsored ad']"
-  ]
+  "version": "1.0.1",
+  "lastUpdated": "2026-03-25",
+  "sites": {
+    "amazon": {
+      "selectors": [
+        "[data-component-type='sp-sponsored-result']",
+        "[data-component-type='s-impression-logger'][data-ad-details]",
+        ".AdHolder",
+        ".s-sponsored-label-info-icon",
+        ".puis-sponsored-label-text",
+        "[aria-label='Sponsored']",
+        ".sponsored-products-truncated-label",
+        ".s-desktop-sponsored-label",
+        "[data-ad-feedback-detail-url]",
+        ".ape-ads-impression-tracker",
+        "[cel_widget_id*='SP-sponsored']",
+        "[cel_widget_id*='SPONSORED_PRODUCTS']",
+        "[data-csa-c-type='widget'][data-csa-c-slot-id*='sponsored']",
+        "[data-csa-c-slot-id='SP_DESKTOP_MIDPAGE']",
+        "[data-csa-c-slot-id='SP_DESKTOP_BOTTOM']",
+        "[data-csa-c-slot-id='SP_DESKTOP_TOP']",
+        "[data-component-type='s-featured-result']",
+        "[data-adfeedback-token]",
+        "[data-cel-widget*='MAIN-FEATURED_ASINS']",
+        "[data-cel-widget*='desktop-beta-3']",
+        "[id^='gridItemRoot']:has(.puis-sponsored-label-text)",
+        ".a-carousel-card:has(.puis-sponsored-label-text)",
+        ".s-result-item:has([data-component-type='sp-sponsored-result'])",
+        ".sg-col-inner:has(.puis-sponsored-label-text)",
+        ".a-fixed-left-grid:has(.s-sponsored-label-info-icon)",
+        "#sp-cc",
+        ".sp-cc",
+        "#percolate-ui-ilm_div",
+        "[data-cy='aax-desktop-carousel']",
+        ".rush-component:has([data-component-type='sp-sponsored-result'])",
+        ".s-widget-container:has(.puis-sponsored-label-text)",
+        ".s-result-item[data-asin=''][data-index]",
+        "[data-asin=''][class*='s-result-item']",
+        "div[class*='sponsored']:not([class*='unsponsored'])",
+        ".a-section:has([data-component-type='sp-sponsored-result'])",
+        "[data-component-type='nile-zenith-rufus-teaser-widget-component']",
+        "[data-component-type='s-searchgrid-carousel']",
+        "[data-component-type='s-messaging-widget-results-header']"
+      ],
+      "domains": [
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.ca",
+        "amazon.de",
+        "amazon.fr",
+        "amazon.it",
+        "amazon.es",
+        "amazon.com.au"
+      ]
+    }
+  }
 }
