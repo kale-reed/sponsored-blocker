@@ -1,0 +1,48 @@
+{
+  "_comment": "Sponsored Blocker — Amazon selector config. Host this file on GitHub and update it whenever Amazon changes their HTML. The extension fetches this automatically every 24 hours. Groups: sp-data-attrs, class-based, carousels, label-text, top-page-ads, sidebar-widgets, blank-asin-slots, video-ads, editorial, aria-labels.",
+  "_version": "1.0.0",
+  "_last_updated": "2026-03-25",
+
+  "selectors": [
+    "[data-component-type='sp-sponsored-result']",
+    "[data-component-type='s-impression-logger'][data-component-id*='sp-']",
+    "[data-component-type='s-sponsored-header']",
+    "[data-component-type='s-video-sponsored-result']",
+
+    ".AdHolder",
+    ".s-sponsored-label-info-icon",
+    ".puis-sponsored-label-text",
+    ".s-label-popover-default",
+    ".s-desktop-sponsor-col",
+    ".sp_sponsored_label",
+    ".s-coupon-highlight-color[data-csa-c-slot-id*='sp']",
+
+    "[data-cel-widget*='SPONSOR']",
+    "[data-cel-widget*='sp-']",
+    "[data-cel-widget='SPONSORED_PRODUCTS-EDITORIAL_REC']",
+
+    "[data-csa-c-content-id*='sponsored']",
+    "[data-csa-c-slot-id*='sponsored']",
+    "[data-asin=''][data-index]",
+    "[data-is-sponsored]",
+
+    "#sp_detail",
+    "#sp_detail2",
+    "#sp_detail_thematic",
+    "#desktop_buybox_group_sponsored_products",
+    "#sponAsinCarousel",
+    "#sponsoredProducts2_feature_div",
+    "#sponsoredProducts3_feature_div",
+    "#sp-detail-below-reviews",
+    "#rhf",
+    "#top-picks-aw-sponsored",
+    "#sponsored-products-sota_feature_div",
+    "#sims-fbt-sponsored_feature_div",
+    "#sponsored-brand-carousel_feature_div",
+    "#sponsored-brands-below-search",
+    "#sb-brand-story-ad_feature_div",
+
+    "[aria-label='Sponsored']",
+    "[aria-label*='Sponsored ad']"
+  ]
+}
